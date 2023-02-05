@@ -5,7 +5,7 @@ import TopSide from '../TopSide/TopSide';
 
 const Main = () => {
     return (
-        <div className='p-2'>
+        <div className='bg-primary p-1'>
                 <TopSide></TopSide>
                 <Outlet></Outlet>
         </div>
