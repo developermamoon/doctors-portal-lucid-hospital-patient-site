@@ -1,10 +1,31 @@
-ul{
+.menu-headers{
+    color: black;
+}
+.menu-headers ul, .menu-items ul{
     margin: 0;
     padding: 0;
 }
 
-ul li {
+.menu-headers ul li, .menu-items ul li {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
 }
+
+.menu-headers ul li:hover{
+    cursor: pointer;
+    /* outline: 1px solid black; */
+    outline: 1px solid gray;
+    border-radius: 3px;
+}
+
+.menu-items ul li:hover{
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+
+/* #menu-home{
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+    border-radius: 4px;
+} */
