@@ -1,16 +1,3 @@
-.menu-headers{
-    color: black;
-}
-.menu-headers ul, .menu-items ul{
-    margin: 0;
-    padding: 0;
-}
-
-.menu-headers ul li, .menu-items ul li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 10px;
-}
 
 .menu-headers ul li:hover{
     cursor: pointer;
@@ -19,13 +6,23 @@
     border-radius: 3px;
 }
 
-.menu-items ul li:hover{
+.menu-items a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 5px;
+    color: black;
+    font-weight: lighter;
+}
+
+.menu-items a:hover{
     background-color: #F0F0F0;
     cursor: pointer;
 }
 
-/* #menu-home{
-    border-top: 1px solid red;
-    border-right: 1px solid red;
-    border-radius: 4px;
-} */
+.search-box{
+    width: 100%;
+    margin: 0 auto;
+}
+.search-button{
+    border-radius: 5px 0 0 5px;
+}
