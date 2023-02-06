@@ -4,7 +4,6 @@ import Main from "../Layouts/Main";
 
 export const routes = createBrowserRouter([
     {path: '/', element: <Main></Main>, children: [
-        {path: '/', element: <Home></Home>}
-        
+        {path: '/', element: <Home></Home>}  
     ]}
 ])
