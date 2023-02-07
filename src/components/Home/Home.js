@@ -56,14 +56,91 @@ const Home = () => {
                             <div>
                                 <div className='search-box d-flex justify-content-center'>
                                     <button className='search-button btn btn-dark'><FiSearch ></FiSearch></button>
-                                    <input type="text" className='w-75' name="" id="" placeholder='Search...' />
+                                    <input type="text" className='w-75' style={{outline: "none"}}  name="" id="" placeholder='Search...' />
                                 </div>
                             </div>
                         </Tab>
 
                         <Tab eventKey="settings" title=<IoSettingsOutline></IoSettingsOutline> >
                             <div className='ps-3'>
-                                <p className='ubuntu fw-semibold'>Choose Skin</p>
+                                <p className='ubuntu fw-semibold' style={{ color: "#5A5A5A" }}>Choose Skin</p>
+
+                                <form action="" className='ubuntu'>
+                                    
+                                    <div className='my-2' style={{ color: '#5A5A5A' }}>
+                                        <input type="radio" name="choose-skin" id="purple" checked />
+                                        <label htmlFor="purple" className='ms-2'>Purple</label>
+                                    </div>
+                                    
+                                    <div className='my-2' style={{ color: '#5A5A5A' }}>
+                                        <input type="radio" name="choose-skin" id="blue" />
+                                        <label htmlFor="blue" className='ms-2'>Blue</label>
+                                    </div>
+                                    
+                                    <div className='my-2' style={{ color: '#5A5A5A' }}>
+                                        <input type="radio" name="choose-skin" id="cyan" />
+                                        <label htmlFor="cyan" className='ms-2'>Cyan</label>
+                                    </div>
+                                    
+                                    <div className='my-2' style={{ color: '#5A5A5A' }}>
+                                        <input type="radio" name="choose-skin" id="green" />
+                                        <label htmlFor="green" className='ms-2'>Green</label>
+                                    </div>
+                                    
+                                    <div className='my-2' style={{ color: '#5A5A5A' }}>
+                                        <input type="radio" name="choose-skin" id="orange" />
+                                        <label htmlFor="orange" className='ms-2'>Orange</label>
+                                    </div>
+                                    
+                                    <div className='my-2' style={{ color: '#5A5A5A' }}>
+                                        <input type="radio" name="choose-skin" id="blush" />
+                                        <label htmlFor="blush" className='ms-2'>Blush</label>
+                                    </div>
+
+                                </form>
+
+                                <p className='ubuntu fw-semibold' style={{ color: "#5A5A5A" }}>General Settings</p>
+
+                                <form action="" className='ubuntu'>
+                                    <div style={{ color: '#5A5A5A' }}>
+                                        <input type="checkbox" name="" id="report-panel-usage" />
+                                        <label htmlFor="report-panel-usage" className='ms-2'>Report Panel Usage</label>
+                                    </div>
+
+                                    
+                                    <div className='my-2' style={{color: '#5A5A5A'}}>
+                                        <input type="checkbox" name="" id="email-redirect" />
+                                        <label htmlFor="email-redirect" className='ms-2'>Email Redirect</label>
+                                    </div>
+
+                                    
+                                    <div className='my-2' style={{color: '#5A5A5A'}}>
+                                        <input type="checkbox" name="" id="notifications" checked/>
+                                        <label htmlFor="notifications" className='ms-2'>Notifications</label>
+                                    </div>
+
+                                    
+                                    <div className='my-2' style={{color: '#5A5A5A'}}>
+                                        <input type="checkbox" name="" id="auto-updates" checked />
+                                        <label htmlFor="auto-updates" className='ms-2'>Auto Updates</label>
+                                    </div>
+
+                                    
+                                    <div className='my-2' style={{color: '#5A5A5A'}}>
+                                        <input type="checkbox" name="" id="offline" />
+                                        <label htmlFor="offline" className='ms-2'>Offline</label>
+                                    </div>
+
+                                    
+                                    <div className='my-2' style={{color: '#5A5A5A'}}>
+                                        <input type="checkbox" name="" id="location-permission" checked />
+                                        <label htmlFor="location-permission" className='ms-2'>Location Permission</label>
+                                    </div>
+
+                                    
+                                </form>
+
+
                             </div>
                         </Tab>
                     </Tabs>
